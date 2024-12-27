@@ -38,7 +38,7 @@ The spritesheet is saved as `elements_spritesheet.png`. The Pygame quiz tests el
 
 ## License
 
-[MIT](github.com/AlvajoyAsante/Little-Alchemy-Asset-Ripper/LICENSE)
+[MIT](/LICENSE)
 
 ## Acknowledgements
 
