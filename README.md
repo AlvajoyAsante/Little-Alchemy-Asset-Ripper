@@ -1,4 +1,4 @@
-# Little-Alchemy-Asset-Ripper
+# Little Alchemy Asset Ripper
 
 Downloads icons from Little Alchemy, processes them, creates a spritesheet, and provides a Pygame quiz. Handles cases where there are more images than names via the pygame quiz.
 
