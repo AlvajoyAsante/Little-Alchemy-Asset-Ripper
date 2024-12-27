@@ -44,7 +44,7 @@ The spritesheet is saved as `elements_spritesheet.png`. The Pygame quiz tests el
 
 *   Little Alchemy
 *   Little Alchemy hints website
-*   AI was used in the development of the project.
+*   ChatGPT / Gemini were used during the development of this project
 
 ---
-©️ 2024 - Alvajoy Asante
+Copyright © 2024 - Alvajoy Asante
