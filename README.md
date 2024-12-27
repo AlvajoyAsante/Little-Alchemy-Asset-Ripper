@@ -3,6 +3,41 @@
 
 This project aims to downloads icons from [Little Alchemy](https://littlealchemy.com/), processes them, creates a spritesheet, and provide a validation Pygame quiz. Which is meant Handles cases where there are more images than element names.
 
+
+## Features
+
+*   Downloads and resizes images (32x32).
+*   Handles transparency (alpha channel).
+*   Indexed color conversion (8 "8-bit" colors).
+*   Spritesheet creation with padding and optional text labels.
+*   Pygame-based interactive quiz.
+*   Handles more images than provided names (unnamed images are included in the spritesheet without labels, and the quiz only uses named elements).
+
+## Requirements
+
+*   Python 3.7+
+*   `Pillow`, `requests`, `pygame`: `pip install Pillow requests pygame`
+
+## Usage
+
+1.  `git clone <repository_url>`
+2.  `cd Little-Alchemy-Asset-Ripper`
+3.  `python element_downloader.py`
+
+## Configuration
+
+Modify these variables in `if __name__ == "__main__":`:
+
+*   `url_template`: Image URL template (`{number}` placeholder).
+*   `start_number`, `end_number`: Image number range.
+*   `output_folder`, `spritesheet_output`: Output paths.
+*   `names`: List of element names (order matters). Fewer names than images are handled gracefully.
+*   `images_per_row`, `padding`: Spritesheet layout options.
+
+## Spritesheet & Quiz
+
+The spritesheet is saved as `elements_spritesheet.png`. The validation game is launched after the spritesheet is created. The quiz will only use the names provided in the `names` list.
+
 ## Analysis
 
 During the analysis stage, I notice there were more images than the actual names of the elements when reverse engineering the hint's site. I decided to create a quiz game to test and check if images didn't match with the names generated in `validation/names.txt`. The quiz game only uses the names of the elements that are provided in the names list which where found on the hints site. Once done, a validation report will be generated allow us to run analysis on the data. Most of the images that weren't in the names list were actually memes or easter eggs that were added to the game (_There was a lot of candy _:P ).
@@ -52,40 +87,6 @@ Below is a list of the image names that were not in the names list:
 ## Sprite Sheet
 ![elements_spritesheet](doc/elements_spritesheet.png)
 
-
-## Features
-
-*   Downloads and resizes images (32x32).
-*   Handles transparency (alpha channel).
-*   Indexed color conversion (8 "8-bit" colors).
-*   Spritesheet creation with padding and optional text labels.
-*   Pygame-based interactive quiz.
-*   Handles more images than provided names (unnamed images are included in the spritesheet without labels, and the quiz only uses named elements).
-
-## Requirements
-
-*   Python 3.7+
-*   `Pillow`, `requests`, `pygame`: `pip install Pillow requests pygame`
-
-## Usage
-
-1.  `git clone <repository_url>`
-2.  `cd Little-Alchemy-Asset-Ripper`
-3.  `python element_downloader.py`
-
-## Configuration
-
-Modify these variables in `if __name__ == "__main__":`:
-
-*   `url_template`: Image URL template (`{number}` placeholder).
-*   `start_number`, `end_number`: Image number range.
-*   `output_folder`, `spritesheet_output`: Output paths.
-*   `names`: List of element names (order matters). Fewer names than images are handled gracefully.
-*   `images_per_row`, `padding`: Spritesheet layout options.
-
-## Spritesheet & Quiz
-
-The spritesheet is saved as `elements_spritesheet.png`. The validation game is launched after the spritesheet is created. The quiz will only use the names provided in the `names` list.
 
 ## License
 
