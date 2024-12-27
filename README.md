@@ -1,7 +1,7 @@
 ![little_alch_logo](doc/logo.png)
 # Little Alchemy Asset Ripper
 
-This project aims to Downloads icons from Little Alchemy, processes them, creates a spritesheet, and provide a validation Pygame quiz. Which is meant Handles cases where there are more images than element names.
+This project aims to downloads icons from Little Alchemy, processes them, creates a spritesheet, and provide a validation Pygame quiz. Which is meant Handles cases where there are more images than element names.
 
 ## Analysis
 
