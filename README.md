@@ -85,7 +85,7 @@ Modify these variables in `if __name__ == "__main__":`:
 
 ## Spritesheet & Quiz
 
-The spritesheet is saved as `elements_spritesheet.png`. The Pygame quiz tests element identification (y/n).
+The spritesheet is saved as `elements_spritesheet.png`. The validation game is launched after the spritesheet is created. The quiz will only use the names provided in the `names` list.
 
 ## License
 
