@@ -45,13 +45,8 @@ if __name__ == "__main__":
             result = input("Do you want to remove these files? (y/n): ")
             if result == "y" or result == "Y":
                 for name in not_in_validation:
-                    
-                    
-                    # os.remove(os.path.join(image_folder, name))
-
-                    # move the files to a different folder instead of deleting them
-                    os.rename(os.path.join(image_folder, name), os.path.join("doc", name))
-
+                    # move the files to the doc folder                    
+                    os.remove(os.path.join(image_folder, name))
 
                     # remove them from the list
                     image_files.remove(name)
