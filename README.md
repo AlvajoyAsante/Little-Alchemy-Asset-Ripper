@@ -1,11 +1,11 @@
 ![little_alch_logo](doc/logo.png)
 # Little Alchemy Asset Ripper
 
-This project aims to downloads icons from Little Alchemy, processes them, creates a spritesheet, and provide a validation Pygame quiz. Which is meant Handles cases where there are more images than element names.
+This project aims to downloads icons from [Little Alchemy](https://littlealchemy.com/), processes them, creates a spritesheet, and provide a validation Pygame quiz. Which is meant Handles cases where there are more images than element names.
 
 ## Analysis
 
-During the analysis stage, I notice there were more images than the actual names of the elements when reverse engineering the hint's site. I decided to create a quiz game to test and check if images didn't match with the names generated in `validation/names.txt`. The quiz game only uses the names of the elements that are provided in the names list which where found on the hints site. Once done, a validation report will be generated allow us to run analysis on the data. Most of the images that weren't in the names list were actually memes or easter eggs that were added to the game (There was a lot of candy :P ).
+During the analysis stage, I notice there were more images than the actual names of the elements when reverse engineering the hint's site. I decided to create a quiz game to test and check if images didn't match with the names generated in `validation/names.txt`. The quiz game only uses the names of the elements that are provided in the names list which where found on the hints site. Once done, a validation report will be generated allow us to run analysis on the data. Most of the images that weren't in the names list were actually memes or easter eggs that were added to the game (_There was a lot of candy _:P ).
 
 Below is a list of the image names that were not in the names list:
 
@@ -95,7 +95,7 @@ The spritesheet is saved as `elements_spritesheet.png`. The Pygame quiz tests el
 
 *   Little Alchemy
 *   Little Alchemy hints website
-*   ChatGPT / Gemini were used during the development of this project
+*   [ChatGPT](https://chatgpt.com/) / [Gemini](https://gemini.google.com/) were used during the development of this project
 
 ---
 Copyright © 2024 - Alvajoy Asante
